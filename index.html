@@ -16,20 +16,20 @@
 						<tr>
 							<td>
 								<label>
-									Nome Completo:
-									<input type="text" name="fullname" id="nomecompleto" minlength="10" maxlength="50" required>
+									Nome Completo:*
+									<input type="text" name="fullname" id="nomecompleto" minlength="10" maxlength="35" required>
 								</label>
 							</td>
 							<td>
 								<label>
-									Data de Nascimento:
+									Data de Nascimento:*
 									<input type="date" name="dateofbirth" id="datadenascimento" title="**/**/****" required>
 								</label>
 							</td>
 							<td>
 								<label>
-									Tipo de Documento:
-									<select name="DocumentType" size="1">
+									Tipo de Documento:*
+									<select name="DocumentType" size="1" required>
 										<option value="rg" selected>Carteira de Identidade</option>
 										<option value="cpf">Cadastro de Pessoa Física</option>
 										<option value="cnh">Carteira de Habilitação</option>
@@ -39,7 +39,7 @@
 							</td>							
 							<td>
 								<label>
-									Número do Documento:
+									Número do Documento:*
 									<input type="text" name="documentnumber" placeholder="Apenas Números" required>
 								</label>
 							</td>
@@ -47,27 +47,68 @@
 						<tr>
 							<td>
 								<label>
-									Tipo de Telefone:
-									<select name="phoneType" size="1">
-										<option value="rg" selected>Carteira de Identidade</option>
-										<option value="cpf">Cadastro de Pessoa Física</option>
-										<option value="cnh">Carteira de Habilitação</option>
-										<option value="planodesaude">Plano de Saúde</option>
+									Tipo do Telefone 1:*
+									<select name="phoneType1" size="1" required>
+										<option></option>
+										<option value="telfixo">Telefone Fixo</option>
+										<option value="telcel">Telefone Celular</option>
+										<option value="telrecado">Telefone de Recado</option>
 									</select>
 								</label>
 							</td>
-							<td></td>
-							<td></td>							
-							<td></td>
+							<td>
+								<label>
+									Número do Telefone 1:*
+									<input type="text" name="phonenumber1" placeholder="(xx)xxxxx-xxxx" required>
+								</label>
+							</td>
+							<td>
+								<label>
+									Tipo do Telefone 2:
+									<select name="phoneType1" size="1">
+										<option></option>
+										<option value="telfixo">Telefone Fixo</option>
+										<option value="telcel">Telefone Celular</option>
+										<option value="telrecado">Telefone de Recado</option>
+									</select>
+								</label>
+							</td>							
+							<td>
+								<label>
+									Número do Telefone 2:
+									<input type="text"  name="phonenumber2" placeholder="(xx)xxxxx-xxxx">
+								</label>
+							</td>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
-							<td></td>							
+							<td></td><!--empty field-->
+							<td>
+								<label>
+									Nome de Recado:
+									<input type="text" name="errandname" id="nomederecado">
+								</label>
+							</td>
+							<td>
+								<label>
+									Email:
+									<input type="email" name="email" id="email" placeholder="example.user@email.com.br">
+								</label>
+							</td>	
+							<td></td><!--empty field-->		
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
+							<td>
+								<label>
+									Logradouro:
+									<input type="text" name="street" id="logradouro" minlength="10" maxlength="35">
+								</label>
+							</td>
+							<td>
+								<label>
+									Número:
+									<input type="text" name="numberhouse" id="numerocasa" minlength="1" maxlength="3">
+								</label>
+							</td>
 							<td></td>							
 							<td></td>
 						</tr>
