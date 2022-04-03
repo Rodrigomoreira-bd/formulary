@@ -17,16 +17,26 @@
 							<td>
 								<label>
 									Nome Completo:
-									<input type="text" name="name" id="name" maxlength="50" minlength="10" required>
+									<input type="text" name="name" id="nomecompleto" minlength="10" maxlength="50" required>
 								</label>
 							</td>
 							<td>
 								<label>
 									Data de Nascimento:
-									<input type="date" name="date" title="**/**/****" required>
+									<input type="date" name="date" id="datadenascimento" title="**/**/****" required>
 								</label>
 							</td>
-							<td></td>							
+							<td>
+								<label>
+									Tipo de Documento:
+									<select name="tipodedocumento" size="1">
+										<option value="rg" selected>Carteira de Identidade</option>
+										<option value="cpf">Cadastro de Pessoa Física</option>
+										<option value="cnh">Carteira de Habilitação</option>
+										<option value="planodesaude">Plano de Saúde</option>
+									</select>
+								</label>
+							</td>							
 							<td></td>
 						</tr>
 						<tr>
